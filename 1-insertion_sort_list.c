@@ -1,13 +1,14 @@
+
 #include "sort.h"
 /**
- * insertion_sort_list - sorts doubly linked list of integers in ascending order by insertion 
+ * insertion_sort_list - sorts doubly linked list using the Insertion sort
  *
  *@list: list_t node.
  *
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *node, *tmp, *aux;
+	listint_t *node, * tmp, *aux;
 
 	if (list && *list == NULL)
 		return;

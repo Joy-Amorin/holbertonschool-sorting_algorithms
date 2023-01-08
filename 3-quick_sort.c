@@ -16,13 +16,13 @@ int partition(int *array, int min, int max, size_t size)
 	int i = (min - 1);
 	int j, tmp;
 
-	for (j = min; j <= max - 1; j++ )
+	for (j = min; j <= max - 1; j++)
 	{
 		if (array[j] < pivot)
 		{
 			i++;
 			if (i != j)
-			{	
+			{
 				tmp = array[i];
 				array[i] = array[j];
 				array[j] = tmp;
@@ -37,7 +37,7 @@ int partition(int *array, int min, int max, size_t size)
 		array[max] = tmp;
 		print_array(array, size);
 	}
-	
+
 	return (i + 1);
 }
 
